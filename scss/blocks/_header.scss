@@ -1,0 +1,69 @@
+.header {
+  padding: 16px 0;
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: flex;
+    margin-right: auto;
+
+    @include vp-767 {
+      width: 98px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin: 0 24px 0 0;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    column-gap: 20px;
+    padding: 5px;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: 128px;
+  }
+
+  &__language-link {
+    outline: none;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    padding: 17px 22px 17px 21px;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__language-link:hover,
+  &__language-link:focus-visible {
+    background-color: $color-solitude-4;
+  }
+
+  &__link {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+  @include vp-1023 {
+    display: block;
+    }
+  }
+}
